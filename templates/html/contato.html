@@ -10,14 +10,14 @@
 <body>
     <header class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ url_for('home') }}">
                 <img src="{{ url_for('static', filename='imagens/logo.png') }}" alt="logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <nav class="navbar-nav ms-auto">
+                 <nav class="navbar-nav ms-auto">
                     <a class="nav-link" href="{{ url_for('home') }}" data-bs-toggle="tooltip" title="Página Inicial">Home</a>
                     <a class="nav-link" href="{{ url_for('quem_somos') }}" data-bs-toggle="tooltip" title="Sobre nossa instituição">Quem somos</a>
                     <a class="nav-link" href="{{ url_for('contato') }}" data-bs-toggle="tooltip" title="Entre em contato">Contato</a>
